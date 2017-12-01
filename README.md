@@ -1,2 +1,4 @@
 # collaborate
-Brendan and Jeremy tag team
+Brendan and Jeremy #delta slob dogs for life 
+
+first time Git huber's 
