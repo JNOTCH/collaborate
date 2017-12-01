@@ -7,3 +7,17 @@ output: html_document
 # This is our analysis!
 
 Breaking news! I just updated our manuscript!
+
+### NYC flight data
+```{r}
+library(tidyverse)
+library(nycflights13) #install.packages("nycflights13")
+
+flights
+#Jan 1 data
+
+flights %>% 
+  filter(month == 1, 
+         day == 1)
+
+```
