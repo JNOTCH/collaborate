@@ -21,6 +21,8 @@ flights %>%
          day == 1)
 
 head(flights)
-ggplot(data=flights, aes(x=month, y=dep_delay))+
-         geom_col()
+
+ggplot(data=flights, aes(x=hour))+
+         geom_density(kernel="gaussian")+
+          theme_bw()
 ```
