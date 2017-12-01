@@ -26,3 +26,24 @@ ggplot(data=flights, aes(x=hour))+
          geom_density(kernel="gaussian")+
           theme_bw()
 ```
+```{r Map}
+library(leaflet)#load.packages
+
+```
+### Tibble awesomeness
+```{r}
+library(tidyverse)
+gapminder <- readr::read_csv('https://raw.githubusercontent.com/OHI-Science/data-science-training/master/data/gapminder.csv')
+
+tbl<-gapminder %>% 
+  group_by(country) %>% 
+  nest() %>% 
+  mutate(
+    mdl= map(data, function(x) lm(gdpPercap ~ year, data = x))
+    #gplot = ggplot2(data, aes(x=year, y=gdpPercap))
+  )
+
+tbl$data[[1]]
+```
+
+
