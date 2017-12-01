@@ -9,7 +9,7 @@ output: html_document
 Breaking news! I just updated our manuscript!
 
 ### NYC flight data
-```{r}
+```{r NYC Import}
 library(tidyverse)
 library(nycflights13) #install.packages("nycflights13")
 
@@ -20,4 +20,7 @@ flights %>%
   filter(month == 1, 
          day == 1)
 
+head(flights)
+ggplot(data=flights, aes(x=month, y=dep_delay))+
+         geom_col()
 ```
