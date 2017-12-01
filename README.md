@@ -1,4 +1,4 @@
 # collaborate
-Brendan and Jeremy #delta slob dogs for life 
+Brendan and Jeremy #deltaslobdogsforlife 
 
-first time Git huber's 
+first time Git huber's                      
