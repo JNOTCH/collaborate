@@ -21,6 +21,6 @@ flights %>%
          day == 1)
 
 head(flights)
-ggplot(data=flights, aes(x=month, y=dep_delay))+
-         geom_col()
+ggplot(data=(flights %>% group_by(month)), aes(x=month))+
+         geom_histogram()
 ```
