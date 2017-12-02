@@ -21,6 +21,10 @@ flights %>%
          day == 1)
 
 head(flights)
+<<<<<<< HEAD
+ggplot(data=(flights %>% group_by(month)), aes(x=month))+
+         geom_histogram()
+=======
 
 ggplot(data=flights, aes(x=hour))+
          geom_density(kernel="gaussian")+
@@ -29,6 +33,7 @@ ggplot(data=flights, aes(x=hour))+
 ```{r Map}
 library(leaflet)#load.packages
 
+>>>>>>> 7121dc5e7c26b84363b6b691c995550bb038f22b
 ```
 ### Tibble awesomeness
 ```{r}
