@@ -46,4 +46,9 @@ tbl<-gapminder %>%
 tbl$data[[1]]
 ```
 
+### Bibliography citation
+```{r}
+library(citr)#install.packages('citr')
+```
+
 
